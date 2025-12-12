@@ -1,0 +1,23 @@
+{
+  "name": "@makun111/zentao-mcp-server",
+  "version": "0.1.1",
+  "description": "MCP server for ZenTao RESTful API v1",
+  "type": "module",
+  "bin": {
+    "zentao-mcp": "./bin/zentao-mcp.js"
+  },
+  "main": "src/zentao-mcp-server.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "scripts": {
+    "start": "node ./src/zentao-mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3"
+  }
+}
