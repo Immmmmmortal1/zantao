@@ -4,15 +4,24 @@
 
 ## 安装
 
-```bash
-# 全局安装（推荐直接使用命令行）
-npm install -g @makun111/zentao-mcp-server
+### 方式一：快速使用（npm）
 
-# 或作为项目依赖
-npm install @makun111/zentao-mcp-server
+```bash
+# 全局安装
+npm install -g @makun111/zentao-mcp-server
 ```
 
-> 如果是本地开发环境，请先 `npm install` 安装依赖；如需使用环境文件，可复制 `.env.example` 为 `.env` 并填写参数。
+> 安装后由 MCP 客户端通过 API/stdio 调用，无需手动启动。
+
+### 方式二：下载源码本地安装
+
+```bash
+git clone git@github.com:Immmmmmortal1/zantao.git
+cd zantao
+npm install
+```
+
+> 用于本地开发/调试。如需环境文件，可将 `.env.example` 复制为 `.env` 并填写参数。需要手动验证时可运行 `npm start`。
 
 ## 环境变量
 
