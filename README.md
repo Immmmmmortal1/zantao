@@ -51,6 +51,18 @@ echo 'export ZENTAO_PASSWORD="你的密码"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
+## MCP 客户端配置示例（OpenAI 等）
+
+在 MCP 客户端的配置文件中添加以下片段即可通过 `npx` 直接运行本服务：
+
+```toml
+# Zentao MCP server (stdio, npm)
+[mcp_servers.zentao_server]
+type = "stdio"
+command = "npx"
+args = ["-y", "@makun111/zentao-mcp-server"]
+```
+
 ## 提供的工具
 
 - `get_token(forceRefresh?)`：调用 `POST /api.php/v1/tokens` 获取 token，默认缓存。
